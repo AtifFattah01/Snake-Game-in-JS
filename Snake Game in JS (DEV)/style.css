@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+#body{
+    background-color: aquamarine;
+    min-height: 95vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+#board{
+    background: linear-gradient(rgb(104, 255, 104),rgb(255, 255, 127));
+    width: 75vmin;
+    height: 75vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(24,1fr);
+    grid-template-columns: repeat(24,1fr);
+    z-index: 20;
+    border-radius: 10px;
+}
+.head{
+    
+    background-color: red;
+    border: 2px solid black;
+    /* border-radius: 4px; */
+    z-index: 32;
+}
+
+.snake{
+    background-color: orangered;
+    border: 1px solid black;
+    z-index: 30;
+}
+
+.food{
+    background: url("Resources/food.png") no-repeat;
+    background-size: cover;
+    z-index: 25;
+    
+}
+#currentScore{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+#hiscore{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 1px;
+    left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+#footer{
+    text-align: center;
+    height: 5vh;
+    background-color: rgb(7, 7, 19);
+    font-size: 15px;
+    font-family: 'Poppins',sans-serif;
+    color: whitesmoke;
+}
